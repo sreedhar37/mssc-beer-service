@@ -30,7 +30,7 @@ public class BeerDto {
     @NotBlank
     private String beerName;
     @NotBlank
-    private BeerStyleEnum beeStyle;
+    private BeerStyleEnum beerStyle;
     @Positive
     @NotNull
     private Long upc;

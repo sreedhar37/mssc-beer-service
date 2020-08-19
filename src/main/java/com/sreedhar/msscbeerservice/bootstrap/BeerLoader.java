@@ -2,6 +2,7 @@ package com.sreedhar.msscbeerservice.bootstrap;
 
 import com.sreedhar.msscbeerservice.domain.Beer;
 import com.sreedhar.msscbeerservice.repository.BeerRepository;
+import com.sreedhar.msscbeerservice.web.model.BeerStyleEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
