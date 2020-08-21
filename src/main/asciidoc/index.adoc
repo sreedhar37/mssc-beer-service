@@ -1,0 +1,7 @@
+* Brewery Beer Service
+Sreedhar
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+Beer service micro service
