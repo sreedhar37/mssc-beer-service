@@ -64,7 +64,6 @@ public class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(beerDtoToJson))
                 .andExpect(status().isNoContent());
-
     }
 
     BeerDto getValidBeerDto() {
