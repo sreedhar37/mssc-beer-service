@@ -24,7 +24,7 @@ public class BeerDtoTest {
                 .beerName("ALE")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("12.99"))
-                .upc(1234232323L)
+                .upc("1234232323")
                 .build();
 
         String jsonString = objectMapper.writeValueAsString(beerDto);
