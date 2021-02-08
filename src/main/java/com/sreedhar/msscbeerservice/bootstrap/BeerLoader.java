@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 @Component
 @Slf4j
-public class BeerLoader  implements CommandLineRunner {
+public class BeerLoader implements CommandLineRunner {
 
     public final String BEER_1_UPC = "0631234200036";
     public final String BEER_2_UPC = "0631234200019";
@@ -29,7 +29,7 @@ public class BeerLoader  implements CommandLineRunner {
     }
 
     private void loadObjects() {
-        if(beerRepository.count() ==0) {
+        if (beerRepository.count() == 0) {
             beerRepository.save(Beer.builder()
                     .beerName("Mango Bob")
                     .beerStyle("IPA")

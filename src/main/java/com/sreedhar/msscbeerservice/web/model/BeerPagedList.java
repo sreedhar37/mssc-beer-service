@@ -17,7 +17,7 @@ public class BeerPagedList extends PageImpl<BeerDto> {
                          @JsonProperty("number") int number,
                          @JsonProperty("size") int size,
                          @JsonProperty("totalElements") Long totalElements,
-                         @JsonProperty("pageable")JsonNode pageable,
+                         @JsonProperty("pageable") JsonNode pageable,
                          @JsonProperty("last") boolean last,
                          @JsonProperty("totalPages") int totalPages,
                          @JsonProperty("sort") JsonNode sort,

@@ -10,9 +10,9 @@ import java.time.ZoneOffset;
 public class DateMapper {
 
     public OffsetDateTime asOffSetDateTime(Timestamp ts) {
-        if (ts !=null) {
+        if (ts != null) {
             return OffsetDateTime.of(ts.toLocalDateTime().getYear(),
-                    ts.toLocalDateTime().getMonthValue(), ts.toLocalDateTime().getDayOfMonth(),ts.toLocalDateTime().getHour(),
+                    ts.toLocalDateTime().getMonthValue(), ts.toLocalDateTime().getDayOfMonth(), ts.toLocalDateTime().getHour(),
                     ts.toLocalDateTime().getMinute(), ts.toLocalDateTime().getSecond(), ts.toLocalDateTime().getNano(), ZoneOffset.UTC);
         } else {
             return null;

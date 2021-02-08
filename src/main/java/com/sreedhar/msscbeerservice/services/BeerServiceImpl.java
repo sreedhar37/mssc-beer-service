@@ -17,6 +17,11 @@ public class BeerServiceImpl implements BeerService {
     private final BeerRepository beerRepository;
     private final BeerMapper beerMapper;
 
+    public BeerServiceImpl(BeerRepository beerRepository, BeerMapper beerMapper) {
+        this.beerRepository = beerRepository;
+        this.beerMapper = beerMapper;
+    }
+
     @Override
     public BeerDto getById(UUID beerId) {
         return beerMapper.beerToBeerDto(beerRepository.findById(beerId).orElseThrow(NotFoundException::new));
@@ -38,4 +43,5 @@ public class BeerServiceImpl implements BeerService {
 
         return beerMapper.beerToBeerDto(beerRepository.save(beer));
     }
+
 }
